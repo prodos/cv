@@ -21,7 +21,19 @@
 		9E91706317536E43003927C3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E91706117536E43003927C3 /* MainStoryboard.storyboard */; };
 		9E91706517536E43003927C3 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9E91706417536E43003927C3 /* Shader.fsh */; };
 		9E91706717536E43003927C3 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9E91706617536E43003927C3 /* Shader.vsh */; };
-		9E91706A17536E43003927C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E91706917536E43003927C3 /* ViewController.m */; };
+		9E91706A17536E43003927C3 /* GLOverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E91706917536E43003927C3 /* GLOverlayController.m */; };
+		9E917073175371F0003927C3 /* CamViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E917071175371F0003927C3 /* CamViewController.mm */; };
+		9E917074175371F0003927C3 /* CamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E917072175371F0003927C3 /* CamViewController.xib */; };
+		9E91707617537445003927C3 /* GLOverlayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E91707517537445003927C3 /* GLOverlayController.xib */; };
+		9E91707817537F7C003927C3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91707717537F7C003927C3 /* AVFoundation.framework */; };
+		9E91707A1753A610003927C3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9170791753A610003927C3 /* QuartzCore.framework */; };
+		9E91707C1753C840003927C3 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91707B1753C840003927C3 /* opencv2.framework */; };
+		9E91707E1753C9F1003927C3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91707D1753C9F1003927C3 /* Accelerate.framework */; };
+		9E9170801753C9FD003927C3 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E91707F1753C9FD003927C3 /* AssetsLibrary.framework */; };
+		9E9170821753CA0C003927C3 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9170811753CA0C003927C3 /* CoreImage.framework */; };
+		9E9170841753CA14003927C3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9170831753CA14003927C3 /* CoreMedia.framework */; };
+		9E9170861753CA1D003927C3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9170851753CA1D003927C3 /* CoreVideo.framework */; };
+		9E9170891753D5B9003927C3 /* CustomCvVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9170881753D5B9003927C3 /* CustomCvVideoCamera.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +55,22 @@
 		9E91706217536E43003927C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		9E91706417536E43003927C3 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		9E91706617536E43003927C3 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		9E91706817536E43003927C3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9E91706917536E43003927C3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9E91706817536E43003927C3 /* GLOverlayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLOverlayController.h; sourceTree = "<group>"; };
+		9E91706917536E43003927C3 /* GLOverlayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLOverlayController.m; sourceTree = "<group>"; };
+		9E917070175371F0003927C3 /* CamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamViewController.h; sourceTree = "<group>"; };
+		9E917071175371F0003927C3 /* CamViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CamViewController.mm; sourceTree = "<group>"; };
+		9E917072175371F0003927C3 /* CamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CamViewController.xib; sourceTree = "<group>"; };
+		9E91707517537445003927C3 /* GLOverlayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLOverlayController.xib; sourceTree = "<group>"; };
+		9E91707717537F7C003927C3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E9170791753A610003927C3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9E91707B1753C840003927C3 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		9E91707D1753C9F1003927C3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9E91707F1753C9FD003927C3 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9E9170811753CA0C003927C3 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9E9170831753CA14003927C3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9E9170851753CA1D003927C3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9E9170871753D5B9003927C3 /* CustomCvVideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCvVideoCamera.h; sourceTree = "<group>"; };
+		9E9170881753D5B9003927C3 /* CustomCvVideoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCvVideoCamera.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +78,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E91704617536E43003927C3 /* UIKit.framework in Frameworks */,
-				9E91704817536E43003927C3 /* Foundation.framework in Frameworks */,
+				9E91707E1753C9F1003927C3 /* Accelerate.framework in Frameworks */,
+				9E9170801753C9FD003927C3 /* AssetsLibrary.framework in Frameworks */,
+				9E91707817537F7C003927C3 /* AVFoundation.framework in Frameworks */,
 				9E91704A17536E43003927C3 /* CoreGraphics.framework in Frameworks */,
+				9E9170821753CA0C003927C3 /* CoreImage.framework in Frameworks */,
+				9E9170841753CA14003927C3 /* CoreMedia.framework in Frameworks */,
+				9E9170861753CA1D003927C3 /* CoreVideo.framework in Frameworks */,
+				9E91704817536E43003927C3 /* Foundation.framework in Frameworks */,
 				9E91704C17536E43003927C3 /* GLKit.framework in Frameworks */,
+				9E91707A1753A610003927C3 /* QuartzCore.framework in Frameworks */,
+				9E91707C1753C840003927C3 /* opencv2.framework in Frameworks */,
 				9E91704E17536E43003927C3 /* OpenGLES.framework in Frameworks */,
+				9E91704617536E43003927C3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +117,14 @@
 		9E91704417536E43003927C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E9170851753CA1D003927C3 /* CoreVideo.framework */,
+				9E9170831753CA14003927C3 /* CoreMedia.framework */,
+				9E9170811753CA0C003927C3 /* CoreImage.framework */,
+				9E91707F1753C9FD003927C3 /* AssetsLibrary.framework */,
+				9E91707D1753C9F1003927C3 /* Accelerate.framework */,
+				9E91707B1753C840003927C3 /* opencv2.framework */,
+				9E9170791753A610003927C3 /* QuartzCore.framework */,
+				9E91707717537F7C003927C3 /* AVFoundation.framework */,
 				9E91704517536E43003927C3 /* UIKit.framework */,
 				9E91704717536E43003927C3 /* Foundation.framework */,
 				9E91704917536E43003927C3 /* CoreGraphics.framework */,
@@ -100,8 +142,14 @@
 				9E91706117536E43003927C3 /* MainStoryboard.storyboard */,
 				9E91706417536E43003927C3 /* Shader.fsh */,
 				9E91706617536E43003927C3 /* Shader.vsh */,
-				9E91706817536E43003927C3 /* ViewController.h */,
-				9E91706917536E43003927C3 /* ViewController.m */,
+				9E91706817536E43003927C3 /* GLOverlayController.h */,
+				9E91706917536E43003927C3 /* GLOverlayController.m */,
+				9E91707517537445003927C3 /* GLOverlayController.xib */,
+				9E917070175371F0003927C3 /* CamViewController.h */,
+				9E917071175371F0003927C3 /* CamViewController.mm */,
+				9E917072175371F0003927C3 /* CamViewController.xib */,
+				9E9170871753D5B9003927C3 /* CustomCvVideoCamera.h */,
+				9E9170881753D5B9003927C3 /* CustomCvVideoCamera.m */,
 				9E91705017536E43003927C3 /* Supporting Files */,
 			);
 			path = CameraMeasure;
@@ -179,6 +227,8 @@
 				9E91706317536E43003927C3 /* MainStoryboard.storyboard in Resources */,
 				9E91706517536E43003927C3 /* Shader.fsh in Resources */,
 				9E91706717536E43003927C3 /* Shader.vsh in Resources */,
+				9E917074175371F0003927C3 /* CamViewController.xib in Resources */,
+				9E91707617537445003927C3 /* GLOverlayController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +241,9 @@
 			files = (
 				9E91705617536E43003927C3 /* main.m in Sources */,
 				9E91705A17536E43003927C3 /* AppDelegate.m in Sources */,
-				9E91706A17536E43003927C3 /* ViewController.m in Sources */,
+				9E91706A17536E43003927C3 /* GLOverlayController.m in Sources */,
+				9E917073175371F0003927C3 /* CamViewController.mm in Sources */,
+				9E9170891753D5B9003927C3 /* CustomCvVideoCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +328,10 @@
 		9E91706E17536E43003927C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraMeasure/CameraMeasure-Prefix.pch";
 				INFOPLIST_FILE = "CameraMeasure/CameraMeasure-Info.plist";
@@ -287,6 +343,10 @@
 		9E91706F17536E43003927C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraMeasure/CameraMeasure-Prefix.pch";
 				INFOPLIST_FILE = "CameraMeasure/CameraMeasure-Info.plist";
@@ -314,6 +374,7 @@
 				9E91706F17536E43003927C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
